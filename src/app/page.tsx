@@ -20,6 +20,7 @@ export default function Home() {
       const res = await api.post("/login", { email, password });
       const { user, token } = res.data;
       setAuth(user, token);
+      // 🚩 Keep the JWT keys here.
       Cookies.set("auth-token", token, { expires: 1, path: "/" });
 
       alert("Login Success!");

@@ -23,5 +23,5 @@ export function middleware(request: NextRequest) {
 
 // 4. กำหนดว่าจะให้ Middleware ทำงานที่ Path ไหนบ้าง
 export const config = {
-  matcher: ["/", "/dashboard/:path*"],
+  matcher: ["/", "/register", "/dashboard/:path*"],
 };
